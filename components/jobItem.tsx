@@ -87,7 +87,7 @@ const JobItem: FC<JobItemProps> = ({
           job.role && (
             <li 
               className="fontsize-normal font-semi-bold"
-              onClick={handleChange(job.role)}
+              onClick={(event: MouseEvent<HTMLLIElement, MouseEvent>) => handleChange(job.role)}
             >
               {job.role}
             </li>
@@ -96,7 +96,7 @@ const JobItem: FC<JobItemProps> = ({
         {
           job.level && (
             <li className="fontsize-normal font-semi-bold"
-              onClick={handleChange(job.level)}
+              onClick={(event: MouseEvent<HTMLLIElement, MouseEvent>) => handleChange(job.level)}
             >
               {job.level}
             </li>
@@ -106,7 +106,7 @@ const JobItem: FC<JobItemProps> = ({
           job.tools && job.tools.map((tool, index) => (
             <li 
               key={index} 
-              onClick={handleChange(tool)}
+              onClick={(event: MouseEvent<HTMLLIElement, MouseEvent>) => handleChange(tool)}
               className="fontsize-normal font-semi-bold"
             >
               {tool}
@@ -117,7 +117,7 @@ const JobItem: FC<JobItemProps> = ({
           job.languages && job.languages.map((language, index) => (
             <li 
               key={index}
-              onClick={handleChange(language)}
+              onClick={(event: MouseEvent<HTMLLIElement, MouseEvent>) => handleChange(language)}
               className="fontsize-normal font-semi-bold"
             >
               {language}
