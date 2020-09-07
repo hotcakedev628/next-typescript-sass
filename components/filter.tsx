@@ -9,7 +9,7 @@ import variants from '../styles/_variables.scss';
 
 interface FilterProps {
   className?: string;
-  options?: string[];
+  options?: object;
 }
 
 const filterStyle = {
