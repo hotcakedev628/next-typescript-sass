@@ -10,6 +10,7 @@ import variants from '../styles/_variables.scss';
 interface FilterProps {
   className?: string;
   options?: object;
+  value?: any;
 }
 
 const filterStyle = {
