@@ -43,7 +43,7 @@ const options = stackData.map(item => ({
 const Home = () => {
   const [jobs, setJobs] = useState([]);
   const [filteredJobs, setFilteredJobs] = useState([]);
-  const [selectedStacks, setSelectedStacks] = useState<Array<any>>([]);
+  const [selectedStacks, setSelectedStacks] = useState([]);
 
   const handleSelectItem = (stackLabel: string): void => {
     if (!selectedStacks.find(x=>x.label === stackLabel)) {
