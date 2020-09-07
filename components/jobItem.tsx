@@ -8,7 +8,7 @@ import type { JobType } from '../types/types';
 
 interface JobItemProps {
   job?: JobType;
-  handleChange?: (p: string) => void;
+  handleChange?: any;
 }
 
 const featureLabel= (feature) => {
