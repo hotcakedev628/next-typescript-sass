@@ -8,7 +8,7 @@ import type { JobType } from '../types/types';
 
 interface JobItemProps {
   job?: JobType;
-  handleChange?: () => void;
+  handleChange?: (p: string) => void;
 }
 
 const featureLabel= (feature) => {
@@ -87,7 +87,7 @@ const JobItem: FC<JobItemProps> = ({
           job.role && (
             <li 
               className="fontsize-normal font-semi-bold"
-              onClick={(event:any) => handleChange(job.role)}
+              onClick={handleChange(job.role)}
             >
               {job.role}
             </li>
@@ -96,7 +96,7 @@ const JobItem: FC<JobItemProps> = ({
         {
           job.level && (
             <li className="fontsize-normal font-semi-bold"
-              onClick={(event:any) => handleChange(job.level)}
+              onClick={handleChange(job.level)}
             >
               {job.level}
             </li>
@@ -106,7 +106,7 @@ const JobItem: FC<JobItemProps> = ({
           job.tools && job.tools.map((tool, index) => (
             <li 
               key={index} 
-              onClick={(event:any) => handleChange(tool)}
+              onClick={handleChange(tool)}
               className="fontsize-normal font-semi-bold"
             >
               {tool}
@@ -117,7 +117,7 @@ const JobItem: FC<JobItemProps> = ({
           job.languages && job.languages.map((language, index) => (
             <li 
               key={index}
-              onClick={(event:any) => handleChange(language)}
+              onClick={handleChange(language)}
               className="fontsize-normal font-semi-bold"
             >
               {language}
