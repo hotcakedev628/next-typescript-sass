@@ -129,9 +129,4 @@ const JobItem: FC<JobItemProps> = ({
   )
 }
 
-JobItem.propTypes = {
-  job: PropTypes.object,
-  handleChange: PropTypes.func
-};
-
 export default JobItem;
