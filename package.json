@@ -5,6 +5,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "npm run build && next export",
     "test": "jest --watch",
     "test:ci": "jest --ci"
   },
