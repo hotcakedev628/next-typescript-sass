@@ -9,6 +9,6 @@ export interface JobType {
   location?: string,
   role?: string,
   level?: string,
-  tools?: string,
-  languages?: string,
+  tools?: string[],
+  languages?: string[],
 }
