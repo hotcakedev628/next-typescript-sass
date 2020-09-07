@@ -11,6 +11,7 @@ interface FilterProps {
   className?: string;
   options?: object;
   value?: any;
+  onChange?: any;
 }
 
 const filterStyle = {
