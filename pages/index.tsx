@@ -54,9 +54,14 @@ const Home = () => {
   };
 
   const isMatched = useCallback((a, b)=>{
-    const merged = a.concat(b);
-    const optimized = [...new Set([...a, ...b])];
-    return merged.length > optimized.length;
+    let flag = true;
+    a.forEach(itemA=>{
+      if (b.indexOf(itemA) < 0){
+        flag = false;
+        return;
+      }
+    });
+    return flag;
   }, []);
 
   useEffect(() => {
