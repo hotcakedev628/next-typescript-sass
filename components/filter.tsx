@@ -54,10 +54,8 @@ const filterStyle = {
   }),
 };
 
-const CustomClearText = () => 'Clear';
 const ClearIndicator = props => {
   const {
-    children = <CustomClearText />,
     getStyles,
     innerProps: { ref, ...restInnerProps },
   } = props;
@@ -67,7 +65,7 @@ const ClearIndicator = props => {
       ref={ref}
       style={getStyles('clearIndicator', props)}
     >
-      <a className="btn-clear">{children}</a>
+      <a className="btn-clear">Clear</a>
     </div>
   );
 };
