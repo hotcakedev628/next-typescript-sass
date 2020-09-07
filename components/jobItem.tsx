@@ -6,11 +6,6 @@ import {
 } from 'react';
 import type { JobType } from '../types/types';
 
-interface JobItemProps {
-  job?: JobType;
-  handleChange?: any;
-}
-
 const featureLabel= (feature) => {
   const map = {
     new: {
@@ -32,7 +27,7 @@ const featureLabel= (feature) => {
   )
 };
 
-const JobItem: FC<JobItemProps> = ({
+const JobItem = ({
   job,
   handleChange
 }) => {
